@@ -5,3 +5,6 @@ The majority of URDF files are retrived from https://github.com/stoic-roboticist
 Temporarily a local ROS Noetic environment is created to edit the `xacro` files and convert them to URDF files.
 
 At the moment the URDF lacks cameras and a gripper.
+
+Original paper where the repo is retrived from https://lcas.lincoln.ac.uk/wp/wp-content/uploads/2021/09/t6.2-TAROS2021paper33.pdf
+

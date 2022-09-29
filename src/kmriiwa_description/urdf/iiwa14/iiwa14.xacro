@@ -2,11 +2,11 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
   
   <!-- Import all Gazebo-customization elements, including Gazebo colors -->
-  <xacro:include filename="$(find kmriiwa_description)/urdf/iiwa14/iiwa.gazebo.xacro" />
+  <xacro:include filename="$(find kmriiwa_description)/urdf/lbriiwa14/iiwa.gazebo.xacro" />
   <!-- Import Transmissions -->
-  <xacro:include filename="$(find kmriiwa_description)/urdf/iiwa14/iiwa.transmission.xacro" />
+  <xacro:include filename="$(find kmriiwa_description)/urdf/lbriiwa14/iiwa.transmission.xacro" />
   <!-- Include Utilities -->
-  <xacro:include filename="$(find kmriiwa_description)/urdf/iiwa14/utilities.xacro" />
+  <xacro:include filename="$(find kmriiwa_description)/urdf/lbriiwa14/utilities.xacro" />
   
   <!-- some constants -->
   <xacro:property name="safety_controller_k_pos" value="100" />
@@ -14,15 +14,16 @@
   <xacro:property name="joint_damping" value="0.5" />
   <xacro:property name="max_effort" value="300"/>
   <xacro:property name="max_velocity" value="10"/>
+  <xacro:property name="robot_name" value="iiwa14"/>
   
   <xacro:macro name="iiwa14" params="parent hardware_interface robot_name *origin">
     
     <!--joint between {parent} and link_0-->
-    <joint name="${parent}_${robot_name}_joint" type="fixed">
+    <!-- <joint name="${parent}_${robot_name}_joint" type="fixed">
       <xacro:insert_block name="origin"/>
       <parent link="${parent}"/>
       <child link="${robot_name}_link_0"/>
-    </joint>
+    </joint> -->
     
     <link name="${robot_name}_link_0">
       <inertial>

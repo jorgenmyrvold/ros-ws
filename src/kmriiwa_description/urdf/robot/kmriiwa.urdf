@@ -175,7 +175,7 @@
             <inertia ixx="0.075016" ixy="0.0" ixz="0.0" iyy="0.075016" iyz="0.0" izz="0.109375"/>
         </inertial> -->
   </link>
-  <joint name="kmriiwa_front_left_wheel_joint" type="fixed">
+  <joint name="kmriiwa_front_left_wheel_joint" type="revolute">
     <parent link="kmriiwa_base_link"/>
     <child link="kmriiwa_front_left_wheel_link"/>
     <axis xyz="0 1 0"/>
@@ -183,7 +183,7 @@
     <limit effort="100" velocity="100"/>
     <joint_properties damping="0.0" friction="0.0"/>
   </joint>
-  <joint name="kmriiwa_front_right_wheel_joint" type="fixed">
+  <joint name="kmriiwa_front_right_wheel_joint" type="revolute">
     <parent link="kmriiwa_base_link"/>
     <child link="kmriiwa_front_right_wheel_link"/>
     <origin xyz="0.28 -0.1825 0.1"/>
@@ -191,7 +191,7 @@
     <limit effort="100" velocity="100"/>
     <joint_properties damping="0.0" friction="0.0"/>
   </joint>
-  <joint name="kmriiwa_back_left_wheel_joint" type="fixed">
+  <joint name="kmriiwa_back_left_wheel_joint" type="revolute">
     <parent link="kmriiwa_base_link"/>
     <child link="kmriiwa_back_left_wheel_link"/>
     <origin xyz="-0.28 0.1825 0.1"/>
@@ -199,7 +199,7 @@
     <limit effort="100" velocity="100"/>
     <joint_properties damping="0.0" friction="0.0"/>
   </joint>
-  <joint name="kmriiwa_back_right_wheel_joint" type="fixed">
+  <joint name="kmriiwa_back_right_wheel_joint" type="revolute">
     <parent link="kmriiwa_base_link"/>
     <child link="kmriiwa_back_right_wheel_link"/>
     <origin xyz="-0.28 -0.1825 0.1"/>

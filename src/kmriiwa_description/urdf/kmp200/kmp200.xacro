@@ -174,7 +174,7 @@
         </inertial> -->
     </link>
 
-    <joint name="${robot_name}_front_left_wheel_joint" type="fixed">
+    <joint name="${robot_name}_front_left_wheel_joint" type="revolute">
         <parent link="${robot_name}_base_link"/>
         <child link="${robot_name}_front_left_wheel_link"/>
         <axis xyz="0 1 0"/>
@@ -183,7 +183,7 @@
         <joint_properties damping="0.0" friction="0.0"/>
     </joint>
 
-    <joint name="${robot_name}_front_right_wheel_joint" type="fixed">
+    <joint name="${robot_name}_front_right_wheel_joint" type="revolute">
         <parent link="${robot_name}_base_link"/>
         <child link="${robot_name}_front_right_wheel_link"/>
         <origin xyz="${wheel_base/2} ${-1*track_gauge/2} ${wheel_radius-ground_clearance}"/>
@@ -192,7 +192,7 @@
         <joint_properties damping="0.0" friction="0.0"/>
     </joint>
 
-    <joint name="${robot_name}_back_left_wheel_joint" type="fixed">
+    <joint name="${robot_name}_back_left_wheel_joint" type="revolute">
         <parent link="${robot_name}_base_link"/>
         <child link="${robot_name}_back_left_wheel_link"/>
         <origin xyz="${-1*wheel_base/2} ${track_gauge/2} ${wheel_radius-ground_clearance}"/>
@@ -201,7 +201,7 @@
         <joint_properties damping="0.0" friction="0.0"/>
     </joint>
 
-    <joint name="${robot_name}_back_right_wheel_joint" type="fixed">
+    <joint name="${robot_name}_back_right_wheel_joint" type="revolute">
         <parent link="${robot_name}_base_link"/>
         <child link="${robot_name}_back_right_wheel_link"/>
         <origin xyz="${-1*wheel_base/2} ${-1*track_gauge/2} ${wheel_radius-ground_clearance}"/>
