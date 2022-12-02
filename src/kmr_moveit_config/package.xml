@@ -1,6 +1,6 @@
 <package>
 
-  <name>kmr_moveit</name>
+  <name>kmr_moveit_config</name>
   <version>0.3.0</version>
   <description>
      An automatically generated package with all the configuration and launch files for using the kmr with the MoveIt Motion Planning Framework
