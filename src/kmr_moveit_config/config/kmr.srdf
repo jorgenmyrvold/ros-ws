@@ -49,7 +49,7 @@
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="kmr_link_ee" group="kmr_gripper"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
-    <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="kmr_link_0"/>
+    <virtual_joint name="virtual_joint" type="planar" parent_frame="world" child_link="kmr_link_0"/>
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
     <passive_joint name="kmr_back_left_wheel_joint"/>
     <passive_joint name="kmr_back_right_wheel_joint"/>
